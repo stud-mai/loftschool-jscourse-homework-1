@@ -1,9 +1,8 @@
 let index = 0;
 
-function consoleRec(source,numberOfElements) {
+function consoleRec(source) {
     console.log(source[index++]);
-    if (index < numberOfElements) consoleRec(source,numberOfElements)
-
+    if (index < source.length) consoleRec(source);
 }
 
 module.exports = consoleRec;
